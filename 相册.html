@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>字符相册</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body {
+            box-sizing: border-box;
+            background-color: #000;
+            perspective: 2000px;
+        }
+        ul {
+            margin: 800px auto;
+            width: 800px;
+            height: 700px;
+            border: 1px solid gold;
+            box-shadow: 0 0 20px;
+            position: relative;
+            transform-style: preserve-3d;
+            transform-origin: bottom;
+            transition:all 1s;
+        }
+        li {
+            list-style: none;
+            border: 1px solid gold;
+            box-shadow: 0 0 20px;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            transform-origin: left;
+        }
+        
+        li:nth-child(1){
+            background: url("./img/ASCII-6.jpg") left top / 100% 100%;
+        }
+        li:nth-child(2){
+            background: url("./img/ASCII-5.jpg") left top / 100% 100%;
+        }
+        li:nth-child(3){
+            background: url("./img/ASCII-4.jpg") left top / 100% 100%;
+        }
+        li:nth-child(4){
+            background: url("./img/ASCII-3.jpg") left top / 100% 100%;
+        }
+        li:nth-child(5){
+            background: url("./img/ASCII-2.jpg") left top / 100% 100%;
+        }
+        li:nth-child(6){
+            background: url("./img/ASCII-1.jpg") left top / 100% 100%;
+        }
+        
+        
+        ul:hover {
+            transform: rotateX(45deg) rotate(10deg);
+        }
+        ul:hover li:nth-child(6){
+            transform: rotateY(-180deg) ;
+            transition: all 1s 1s;
+        }
+        ul:hover li:nth-child(5){
+            transform: rotateY(-160deg) ;
+            transition: all 1s 2s;
+        }
+        ul:hover li:nth-child(4){
+            transform: rotateY(-140deg) ;
+            transition: all 1s 3s;
+        }
+        ul:hover li:nth-child(3){
+            transform: rotateY(-120deg) ;
+            transition: all 1s 4s;
+        }
+        ul:hover li:nth-child(2){
+            transform: rotateY(-100deg) ;
+            transition: all 1s 5s;
+        }
+        
+        li:nth-child(1){
+            transition: all 1s 1s;
+        }
+        li:nth-child(2){
+            transition: all 1s 1.2s;
+        }
+        li:nth-child(3){
+            transition: all 1s 1.4s;
+        }
+        li:nth-child(4){
+            transition: all 1s 1.6s;
+        }
+        li:nth-child(5){
+            transition: all 1s 1.8s;
+        }
+        li:nth-child(6){
+            transition: all 1s 2s;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</body>
+</html>
